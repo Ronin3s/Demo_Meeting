@@ -40,7 +40,7 @@ const Index = () => {
         {/* Main Content */}
         <main className="flex-1">
           {/* Prediction Form Section */}
-          <section className="py-16 px-4">
+          <section id="predictions" className="py-16 px-4">
             <div className="container mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-3xl font-bold mb-4">Predict Your Apartment's Value</h2>
@@ -78,7 +78,7 @@ const Index = () => {
           <HowItWorks />
           
           {/* Testimonials Section */}
-          <section className="py-16 px-4">
+          <section id="market-reports" className="py-16 px-4">
             <div className="container mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-3xl font-bold mb-4">Trusted by Professionals</h2>

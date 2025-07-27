@@ -225,10 +225,7 @@ export default function Deals() {
           </motion.div>
 
           {/* Deals Grid */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+          <div
             className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6"
           >
             {mockDeals.map((deal, index) => (

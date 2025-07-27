@@ -26,8 +26,8 @@ export function Navbar() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "How It Works", path: "/#how-it-works", isAnchor: true },
-    { name: "Predictions", path: "/predictions" },
-    { name: "Market Reports", path: "/reports" },
+    { name: "Predictions", path: "/#predictions", isAnchor: true },
+    { name: "Market Reports", path: "/#market-reports", isAnchor: true },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -50,27 +50,32 @@ export function Navbar() {
         {/* Navigation Links */}
         <div className="flex-1 hidden md:flex mx-20">
           <nav className="flex items-center justify-center space-x-8 w-full">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.path}
-                className={`relative px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-realestate-purple ${
-                  isActive(link.path)
-                    ? theme === "dark"
-                      ? "text-white"
-                      : "text-realestate-purple"
-                    : theme === "dark"
-                    ? "text-gray-300 hover:text-white"
-                    : "text-gray-600 hover:text-realestate-purple"
-                } ${
-                  isActive(link.path)
-                    ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-realestate-purple"
-                    : ""
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const active = isActive(link.path);
+              const classes = `relative px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-realestate-purple ${
+                active
+                  ? theme === "dark"
+                    ? "text-white"
+                    : "text-realestate-purple"
+                  : theme === "dark"
+                  ? "text-gray-300 hover:text-white"
+                  : "text-gray-600 hover:text-realestate-purple"
+              } ${
+                active
+                  ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-realestate-purple"
+                  : ""
+              }`;
+
+              return link.isAnchor ? (
+                <a key={link.name} href={link.path} className={classes}>
+                  {link.name}
+                </a>
+              ) : (
+                <Link key={link.name} to={link.path} className={classes}>
+                  {link.name}
+                </Link>
+              );
+            })}
           </nav>
         </div>
 
