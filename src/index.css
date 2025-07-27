@@ -4,11 +4,27 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-realestate-purple to-purple-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#8e6fff] to-[#8B5CF6] bg-clip-text text-transparent;
   }
   
   .shadow-custom {
-    box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 10px 40px -10px rgba(142, 111, 255, 0.3);
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #8e6fff, #8B5CF6);
+  }
+  
+  .bg-gradient-dark {
+    background: linear-gradient(to bottom, #0e0c1f, #1c1038, #110824);
+  }
+  
+  .bg-gradient-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9ff);
+  }
+  
+  .text-primary-purple {
+    color: #8e6fff;
   }
 }
 

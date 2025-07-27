@@ -18,13 +18,16 @@ export default {
 			}
 		},
 		extend: {
-			colors: {
+colors: {
                 realestate: {
-                    purple: '#8B5CF6',
-                    lightPurple: '#D6BCFA',
+                    purple: '#8e6fff',
+                    lightPurple: '#D6BCFA', 
                     darkBlue: '#1A1F2C',
                     lightGray: '#F6F6F7',
                     midGray: '#8E9196',
+                    darkGradientStart: '#0e0c1f',
+                    darkGradientMid: '#1c1038',
+                    darkGradientEnd: '#110824',
                 },
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

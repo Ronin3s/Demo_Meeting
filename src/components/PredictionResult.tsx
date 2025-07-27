@@ -28,14 +28,14 @@ export function PredictionResults({ result }: { result: PredictionResult }) {
   return (
     <div className="space-y-6 w-full max-w-4xl mx-auto">
       {/* Main prediction card */}
-      <Card className="border-t-4 border-t-realestate-purple">
+      <Card className="border-t-4 border-t-realestate-purple shadow-custom bg-gradient-card">
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
               <CardTitle className="text-2xl">Predicted Price</CardTitle>
               <CardDescription>Based on similar properties and market trends</CardDescription>
             </div>
-            <Badge className="bg-realestate-purple hover:bg-realestate-purple/90 px-3 py-1">
+            <Badge className="bg-realestate-purple hover:bg-realestate-purple/90 px-3 py-1 shadow-custom">
               <Sparkles className="h-3.5 w-3.5 mr-1" />
               AI Prediction
             </Badge>
@@ -43,7 +43,7 @@ export function PredictionResults({ result }: { result: PredictionResult }) {
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="text-center">
-            <h3 className="text-4xl font-bold text-realestate-purple">
+            <h3 className="text-5xl font-bold text-gradient">
               {formatPrice(result.predictedPrice)}
             </h3>
             <p className="text-sm text-gray-500 mt-1">

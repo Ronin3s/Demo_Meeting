@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Building className="h-6 w-6" />
-              <span className="text-xl font-bold">AptPriceSeer</span>
+              <span className="text-xl font-bold">PropertyPredict</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Accurate apartment price predictions powered by machine learning.
@@ -77,7 +77,7 @@ export function Footer() {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 AptPriceSeer. All rights reserved. Powered by machine learning.
+            © 2025 PropertyPredict. All rights reserved. Powered by machine learning.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
