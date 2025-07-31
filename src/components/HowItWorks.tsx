@@ -9,7 +9,7 @@ export function HowItWorks() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">How Our AI Price Prediction Works</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            AptPriceSeer uses advanced machine learning algorithms trained on millions of real estate 
+           PropertyPredict uses advanced machine learning algorithms trained on millions of real estate 
             transactions to provide accurate price predictions for your property.
           </p>
         </div>
@@ -71,7 +71,7 @@ export function HowItWorks() {
         <div className="mt-12 text-center">
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
             Our predictions have achieved 93% accuracy when compared to actual sale prices, 
-            making AptPriceSeer one of the most reliable tools in the market.
+            making PropertyPredict one of the most reliable tools in the market.
           </p>
           <div className="inline-flex items-center justify-center gap-4 bg-white p-4 rounded-lg shadow-sm">
             <div className="flex flex-col items-center">
